@@ -1,0 +1,11 @@
+li a {
+    color: #f1f1f1;
+    text-decoration:none;
+     
+}
+body {
+    background: rgb(107, 103, 103) url("images/background.gif") no-repeat;
+}
+.btn  {
+       color:darkblue;
+}

@@ -1,0 +1,10 @@
+<h1>{{ question.question_text }}</h1>
+
+<ul>
+{% for choice in question.choice_set.all %}
+    <li>{{ choice.choice_text }} -- {{ choice.vote }} visit{{ choice.vote|pluralize }}</li>
+{% endfor %}
+</ul>
+{% if question.question_text != question.id  %}
+   
+  <a href = "{% url 'polls:index' %}"> next question</a>{%endif%}
